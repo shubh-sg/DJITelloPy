@@ -25,7 +25,7 @@ class Tello:
     [2.0 with EDU-only commands](https://dl-cdn.ryzerobotics.com/downloads/Tello/Tello%20SDK%202.0%20User%20Guide.pdf)
     """
     # Send and receive commands, client socket
-    RESPONSE_TIMEOUT = 7  # in seconds
+    RESPONSE_TIMEOUT = 10  # in seconds
     TAKEOFF_TIMEOUT = 20  # in seconds
     TIME_BTW_COMMANDS = 0.1  # in seconds
     TIME_BTW_RC_CONTROL_COMMANDS = 0.001  # in seconds
