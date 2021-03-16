@@ -1,5 +1,6 @@
 import time, cv2
 from threading import Thread
+from time import sleep
 from djitellopy import Tello
 
 tello = Tello()
@@ -26,10 +27,11 @@ def videoRecorder():
 recorder = Thread(target=videoRecorder)
 recorder.start()
 
-tello.takeoff()
-tello.move_up(100)
-tello.rotate_counter_clockwise(360)
-tello.land()
+sleep(10)
+# tello.takeoff()
+# tello.move_up(100)
+# tello.rotate_counter_clockwise(360)
+# tello.land()
 
 keepRecording = False
 recorder.join()
